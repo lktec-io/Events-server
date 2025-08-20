@@ -16,7 +16,7 @@ module.exports = {
       },
       Date: {
         allowNull: true,
-        type: Sequelize.NUMBER,
+        type: Sequelize.DATE, // changed from NUMBER to DATE
       },
       Location: {
         allowNull: true,
