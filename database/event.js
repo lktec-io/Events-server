@@ -12,6 +12,7 @@ const sequelize = new Sequelize({
   logging: false,
 });
 
+
 (async () => {
   try {
     await sequelize.authenticate();
