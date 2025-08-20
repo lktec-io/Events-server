@@ -29,6 +29,8 @@ app.get("/test", async (req, res) => {
 app.post("/api/loged/register", async (req, res) => {
   const { username, email, password, confirmPassword } = req.body;
 
+  console.log(req.body)
+
   try {
     const existing = await Loged.findOne({ where: { email } });
     if (existing) {
@@ -58,6 +60,7 @@ app.post("/api/loged/login", async (req, res) => {
     if (!validPassword) {
       return res.status(400).json({ message: " incorrect Password" });
     }
+    console.log("successufly login: ",user)
    return res.status(200).json({ message: "Login successful", user });
 
   //  res.json({
