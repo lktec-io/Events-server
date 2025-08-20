@@ -2,11 +2,11 @@ const { Sequelize } = require("sequelize");
 
 
 const sequelize = new Sequelize({
-  host: "localhost",
+  host: "mysql.railway.internal",
   dialect: "mysql",
   username: "root",
-  password: "Lktecio3112",
-  database: "events",
+  password: "jndESCgNMxeIQtlQNyiiPRqwUCuZLqeJ",
+  database: "railway",
   benchmark: true,
   dialectModule: require("mysql2"),
   logging: false,

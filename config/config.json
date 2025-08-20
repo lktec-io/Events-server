@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": "Lktecio3112",
-    "database": "events",
-    "host": "127.0.0.1",
+    "password": "jndESCgNMxeIQtlQNyiiPRqwUCuZLqeJ",
+    "database": "railway",
+    "host": "mysql.railway.internal",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "Lktecio3112",
-    "database": "events",
-    "host": "127.0.0.1",
+    "password": "jndESCgNMxeIQtlQNyiiPRqwUCuZLqeJ",
+    "database": "railway",
+    "host": "mysql.railway.internal",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "Lktecio3112",
-    "database": "events",
-    "host": "127.0.0.1",
+    "password": "jndESCgNMxeIQtlQNyiiPRqwUCuZLqeJ",
+    "database": "railway",
+    "host": "mysql.railway.internal",
     "dialect": "mysql"
   }
 }
