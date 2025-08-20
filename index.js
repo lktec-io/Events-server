@@ -13,7 +13,7 @@ const Loged = require("./model/loged");
 
 app.use(express.json());
 app.use(
-  cors({origin: "https://leo-events.netlify.app",  }));
+  cors({origin: "http://localhost:3000",  }));
 
 
 
