@@ -22,6 +22,10 @@ app.get("/api/loged/data", async (req, res) => {
   res.json(logs);
 });
 
+app.get("/test", async (req, res) => {
+  res.json({message: "your server is live"});
+});
+
 app.post("/api/loged/register", async (req, res) => {
   const { username, email, password, confirmPassword } = req.body;
 
