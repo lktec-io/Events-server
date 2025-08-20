@@ -13,7 +13,7 @@ const Loged = require("./model/loged");
 
 app.use(express.json());
 app.use(
-  cors({origin: "http://localhost:3000",  }));
+  cors({origin: "http://127.0.0.1:3000",  }));
 
 
 
