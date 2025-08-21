@@ -5,6 +5,7 @@ const app = express();
 const port = 7000;
 const bcrypt = require("bcrypt");
 const sequelize = require("./database/event"); 
+const bodyParser = require("body-parser");
 
 
 const User = require("./model/user");
@@ -12,8 +13,9 @@ const Loged = require("./model/loged");
 
 
 app.use(express.json());
-app.use(
-  cors({origin: "http://127.0.0.1:3000",  }));
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 
 
