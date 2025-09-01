@@ -13,7 +13,7 @@ const Loged = sequelize.define("Loged", {
     allowNull: false,
   },
    phone: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
     allowNull: false,
   },
   email: {
@@ -29,7 +29,7 @@ const Loged = sequelize.define("Loged", {
     allowNull: false,
   },
   confirmPassword: {
-    type: DataTypes.VIRTUAL,   // haitahifadhiwa kwenye DB
+    type: DataTypes.VIRTUAL,   
     validate: {
       matchesPassword(value) {
         if (value !== this.password) {

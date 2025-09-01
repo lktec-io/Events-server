@@ -11,13 +11,10 @@ const bodyParser = require("body-parser");
 const User = require("./model/user");
 const Loged = require("./model/loged");
 
-
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-
 
 app.get("/api/loged/data", async (req, res) => {
   const logs = await Loged.findAll();
