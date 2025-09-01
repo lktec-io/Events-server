@@ -10,13 +10,13 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      username: {
+      username: { 
         allowNull: true,
         type: Sequelize.STRING,
       },
       phone: {
         allowNull: false,
-        type: Sequelize.STRING,
+        type: Sequelize.STRING, 
       },
       email: {
         allowNull: true,
