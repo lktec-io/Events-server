@@ -26,7 +26,7 @@ app.get("/test", async (req, res) => {
 });
 
 app.post("/api/loged/register", async (req, res) => {
-  const { username, email, password, confirmPassword } = req.body;
+  const { username,phone, email, password, confirmPassword } = req.body;
 
   console.log(req.body)
 
@@ -40,7 +40,7 @@ app.post("/api/loged/register", async (req, res) => {
       return res.status(400).json({ message: "Password not match" });
     }
 
-    const newUser = await Loged.create({ username, email, password });
+    const newUser = await Loged.create({ username, phone, email, password });
     res.json({ message: "Usajili umefanikiwa", user: newUser });
   } catch (err) {
     console.error("Register error:", err);
