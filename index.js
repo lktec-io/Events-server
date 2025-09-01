@@ -40,7 +40,7 @@ app.post("/api/loged/register", async (req, res) => {
       return res.status(400).json({ message: "Password not match" });
     }
 
-    const newUser = await Loged.create({ username, phone, email, password });
+    const newUser = await Loged.create({ username,phone, email, password });
     res.json({ message: "Usajili umefanikiwa", user: newUser });
   } catch (err) {
     console.error("Register error:", err);
